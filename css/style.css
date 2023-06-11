@@ -14,3 +14,6 @@
 .navbar .nav-link:hover {
   color: var(--red);
 }
+.carousel-item {
+  max-height: calc(100vh - 88px);
+}
