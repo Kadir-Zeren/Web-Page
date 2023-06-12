@@ -292,8 +292,8 @@
               Necessitatibus, fugit dolore totam ut quis aliquid debitis. Qui
               minus dolorum similique maiores repudiandae. Sit at porro
               distinctio sapiente voluptates odit libero?
+              <button class="btn btn-danger">Learn More</button>
             </p>
-            <button class="btn btn-danger">Learn More</button>
           </div>
           <div class="col-md-6">
             <img src="./img/students1.png" width="70%" alt="students" />
@@ -302,74 +302,111 @@
       </section>
       <section id="courses" class="container bg-dark p-3">
         <h2 class="display-6 text-danger">COURSES</h2>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active"
-              id="home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#home-tab-pane"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#fs-images"
               type="button"
               role="tab"
-              aria-controls="home-tab-pane"
+              aria-controls="pills-home"
               aria-selected="true"
             >
-              Home
+              Full-Stack
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#profile-tab-pane"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ds-images"
               type="button"
               role="tab"
-              aria-controls="profile-tab-pane"
+              aria-controls="pills-profile"
               aria-selected="false"
             >
-              Profile
+              Data-Science
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link"
-              id="contact-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#contact-tab-pane"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dev-images"
               type="button"
               role="tab"
-              aria-controls="contact-tab-pane"
+              aria-controls="pills-contact"
               aria-selected="false"
             >
-              Contact
+              Devops
             </button>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
-            id="home-tab-pane"
+            id="fs-images"
             role="tabpanel"
-            aria-labelledby="home-tab"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                  <img
+                    src="https://picsum.photos/id/684/600/400"
+                    class="img-thumbnail"
+                    alt="fs1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                  <img
+                    src="https://picsum.photos/id/684/600/400"
+                    class="img-thumbnail"
+                    alt="fs1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                  <img
+                    src="https://picsum.photos/id/684/600/400"
+                    class="img-thumbnail"
+                    alt="fs1"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                  <img
+                    src="https://picsum.photos/id/684/600/400"
+                    class="img-thumbnail"
+                    alt="fs1"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ds-images"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
             tabindex="0"
           >
             ...
           </div>
           <div
             class="tab-pane fade"
-            id="profile-tab-pane"
+            id="dev-images"
             role="tabpanel"
-            aria-labelledby="profile-tab"
-            tabindex="0"
-          >
-            ...
-          </div>
-          <div
-            class="tab-pane fade"
-            id="contact-tab-pane"
-            role="tabpanel"
-            aria-labelledby="contact-tab"
+            aria-labelledby="pills-contact-tab"
             tabindex="0"
           >
             ...
