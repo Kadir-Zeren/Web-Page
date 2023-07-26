@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Project</title>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,14 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
-  <body>
+  <body id="body">
+    <!-- ****** NAVBAR ****** -->
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./img/CLARUSWAY_LOGO.png" alt=""
-        /></a>
+        <a class="navbar-brand" href="#">
+          <img src="./img/CLARUSWAY_LOGO.png" alt="logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,26 +42,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home"
+              <a class="nav-link active" aria-current="page" href="#index"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="students">Studets</a>
+              <a class="nav-link" href="#students">Students</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="courses">Courses</a>
+              <a class="nav-link" href="#courses">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- ***** CAROUSEL ****** -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -96,7 +100,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/slider2.jpg" class="d-block w-100" alt="img2" />
+          <img src="./img/slider2.jpg" class="d-block w-100" alt="img2" />
           <div class="carousel-caption d-none d-sm-block">
             <h5>Succesful Future</h5>
             <p>Some representative placeholder content for the second slide.</p>
@@ -107,7 +111,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/slider3.jpg" class="d-block w-100" alt="img3" />
+          <img src="./img/slider3.jpg" class="d-block w-100" alt="img3" />
           <div class="carousel-caption d-none d-sm-block">
             <h5>Dream Job</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -137,47 +141,48 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!-- ***** ABOUT ***** -->
     <main class="text-center">
       <section id="about" class="container bg-light p-3">
         <h2 class="text-danger display-6">ABOUT US</h2>
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3">
+            <!--? icon büyüklüğünü fa-x özelliği ile ayarlayabiliriz  -->
             <i class="fas fa-globe-americas fa-2x"></i>
             <h4>Online Courses</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              asperiores cum molestiae id numquam incidunt error eligendi aut
-              fugit impedit!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
             </p>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-6">
             <i class="fas fa-headset fa-2x"></i>
-            <h4>Fulltime Mentoring</h4>
+            <h4>FullTime Mentoring</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              asperiores cum molestiae id numquam incidunt error eligendi aut
-              fugit impedit!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
             </p>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3">
             <i class="fas fa-book-open fa-2x"></i>
             <h4>Learn Yourself</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-              asperiores cum molestiae id numquam incidunt error eligendi aut
-              fugit impedit!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              modi assumenda ab. Rerum, sequi neque?
             </p>
           </div>
         </div>
       </section>
+      <!-- ****** INSTRUCTORS *******-->
       <section id="instructors" class="container bg-dark p-3">
         <h2 class="text-danger display-6">OUR INSTRUCTORS</h2>
         <div class="row g-3 justify-content-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card h-100">
-              <img src="./img/teacher1.jpg" class="card-img-top" alt="T1" />
+              <img src="./img/teacher1.jpg" class="card-img-top" alt="t1" />
               <div class="card-body">
-                <h5 class="card-title">josh Ren</h5>
+                <h5 class="card-title">Josh Ren</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -193,7 +198,7 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card h-100">
-              <img src="./img/teacher2.jpg" class="card-img-top" alt="T2" />
+              <img src="./img/teacher2.jpg" class="card-img-top" alt="t2" />
               <div class="card-body">
                 <h5 class="card-title">Bob Ken</h5>
                 <p class="card-text">
@@ -211,9 +216,9 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card h-100">
-              <img src="./img/teacher3.jpg" class="card-img-top" alt="T3" />
+              <img src="./img/teacher3.jpg" class="card-img-top" alt="t3" />
               <div class="card-body">
-                <h5 class="card-title">jessica Sunny</h5>
+                <h5 class="card-title">Jessica Sunny</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -229,9 +234,9 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card h-100">
-              <img src="./img/teacher4.jpg" class="card-img-top" alt="T4" />
+              <img src="./img/teacher4.jpg" class="card-img-top" alt="t4" />
               <div class="card-body">
-                <h5 class="card-title">johnny Came</h5>
+                <h5 class="card-title">Jonny Came</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -247,9 +252,9 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card h-100">
-              <img src="./img/teacher5.jpg" class="card-img-top" alt="T5" />
+              <img src="./img/teacher5.jpg" class="card-img-top" alt="t5" />
               <div class="card-body">
-                <h5 class="card-title">Oshoc</h5>
+                <h5 class="card-title">Osho</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -265,7 +270,7 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card h-100">
-              <img src="./img/teacher6.jpg" class="card-img-top" alt="T6" />
+              <img src="./img/teacher6.jpg" class="card-img-top" alt="t6" />
               <div class="card-body">
                 <h5 class="card-title">Brandon White</h5>
                 <p class="card-text">
@@ -283,23 +288,25 @@
           </div>
         </div>
       </section>
+      <!-- ****** STUDENTS *******-->
       <section id="students" class="container bg-light p-3">
         <h2 class="display-6 text-danger">OUR STUDENTS</h2>
         <div class="row flex-wrap-reverse align-items-center">
           <div class="col-md-6">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, fugit dolore totam ut quis aliquid debitis. Qui
-              minus dolorum similique maiores repudiandae. Sit at porro
-              distinctio sapiente voluptates odit libero?
-              <button class="btn btn-danger">Learn More</button>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+              dolor saepe, cumque voluptates omnis sint quos, perspiciatis
+              tenetur neque nihil mollitia hic animi corporis totam soluta error
+              officia, quis quasi?
             </p>
+            <button class="btn btn-danger">Learn More</button>
           </div>
           <div class="col-md-6">
             <img src="./img/students1.png" width="70%" alt="students" />
           </div>
         </div>
       </section>
+      <!-- ****** COURSES *******-->
       <section id="courses" class="container bg-dark p-3">
         <h2 class="display-6 text-danger">COURSES</h2>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -311,7 +318,7 @@
               data-bs-target="#fs-images"
               type="button"
               role="tab"
-              aria-controls="pills-home"
+              aria-controls="fs-images"
               aria-selected="true"
             >
               Full-Stack
@@ -354,40 +361,40 @@
             aria-labelledby="pills-home-tab"
             tabindex="0"
           >
-            <div class="row gap-2">
+            <div class="row g-2">
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/fs1.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/fs1.jpg"
                     class="img-thumbnail"
                     alt="fs1"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/fs2.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/fs2.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="fs2"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/fs3.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/fs3.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="fs3"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/fs4.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/fs4.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="fs4"
                   />
                 </a>
               </div>
@@ -400,43 +407,44 @@
             aria-labelledby="pills-profile-tab"
             tabindex="0"
           >
-             <div class="row gap-2">
+            <div class="row g-2">
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ds1.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ds1.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ds1"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ds2.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ds2.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ds2"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ds3.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ds3.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ds3"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ds4.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ds4.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ds4"
                   />
                 </a>
               </div>
+            </div>
           </div>
           <div
             class="tab-pane fade"
@@ -445,47 +453,151 @@
             aria-labelledby="pills-contact-tab"
             tabindex="0"
           >
-             <div class="row gap-2">
+            <div class="row g-2">
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ops1.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ops1.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ops1"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ops2.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ops2.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ops2"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ops3.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ops3.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ops3"
                   />
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a data-fslightbox href="https://picsum.photos/id/684/600/400">
+                <a data-fslightbox href="./img/thumbnail/ops4.jpg">
                   <img
-                    src="https://picsum.photos/id/684/600/400"
+                    src="./img/thumbnail/ops4.jpg"
                     class="img-thumbnail"
-                    alt="fs1"
+                    alt="ops4"
                   />
                 </a>
               </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- ****** CONTACT *******-->
+      <section id="contact" class="container bg-light p-3">
+        <h2 class="display-6 text-danger">CONTACT</h2>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, hic
+            dolorum? Explicabo dolorem officia non molestiae ipsa laudantium
+            aliquam, eius quidem omnis perferendis voluptatum magni perspiciatis
+            accusantium fugiat placeat est?
+          </p>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <i class="fas fa-phone fa-2x text-danger"></i>
+              <h5>Telephone</h5>
+              <a href="tel:+905555555555">+905555555555</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fab fa-whatsapp fa-2x text-danger"></i>
+              <h5>Whatsapp</h5>
+              <a href="https://wa.me/+905555555555">+905555555555</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope fa-2x text-danger"></i>
+              <h5>E-mail</h5>
+              <a href="mailto:info@clarusway.com">info@clarusway.com</a>
+            </div>
+          </div>
+          <form class="row g-3 mt-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Enter subject"
+              />
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Enter your comment"
+                  id="floatingTextarea"
+                ></textarea>
+                <label for="floatingTextarea">Enter your comment</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-danger px-5">Submit</button>
+            </div>
+          </form>
+        </article>
+        <article id="location" class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d114076.87257137455!2d-80.0397125!3d26.683608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d6f618523787%3A0x3ba092c7d7a6471a!2sPalm%20Beach%2C%20FL%2C%20USA!5e0!3m2!1sen!2str!4v1685789359428!5m2!1sen!2str"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+      </section>
     </main>
+
+    <!-- **** FOOTER **** -->
+    <footer class="bg-dark text-center text-white p-4">
+      <div class="p-3 fa-2x">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="p-2 h6">
+        &copy
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright by Clarusway
+      </div>
+    </footer>
+
+    <!-- ***UP-BUTTON*** -->
+    <a class="btn-up" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
     <script src="./lib/fslightbox.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
